@@ -11,5 +11,4 @@ cc_library_shared {
     srcs: ["*.c"],
 
     header_libs: ["device_kernel_headers"],
-    export_include_dirs: ["include"],
 }
