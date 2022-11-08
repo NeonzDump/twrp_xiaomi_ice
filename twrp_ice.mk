@@ -24,7 +24,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, device/xiaomi/ice/device.mk)
 
 PRODUCT_DEVICE := ice
-PRODUCT_NAME := omni_ice
+PRODUCT_NAME := twrp_ice
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi A1
 PRODUCT_MANUFACTURER := Xiaomi
