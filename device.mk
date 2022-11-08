@@ -54,6 +54,15 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+	android.hardware.gatekeeper@1.0-service \
+	android.hardware.gatekeeper@1.0-impl
+
+PRODUCT_COPY_FILES += \
+	$(OUT_DIR)/target/product/ice/vendor/bin/hw/android.hardware.gatekeeper@1.0-service:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/android.hardware.gatekeeper@1.0-service \
+	$(OUT_DIR)/target/product/ice/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
+
 # Additional Libraries
 TARGET_RECOVERY_DEVICE_MODULES += \
     libkeymaster41 \
